@@ -17,12 +17,25 @@ class Student
 
   def add_student_attributes(attributes_hash)
     binding.pry
-    if attributes_hash.key?(twitter)
-      @twitter = attributes_hash.keys[0]
+    attributes_hash.keys.each do |key|
+      if key == :twitter
+        @twitter = key
+      elsif key == :linkedin
+        @linkedin = key
+      elsif key == :github
+        @github - key
+      elsif key == :blog
+        @blog = key
+      elsif key == :profile_quote
+        @profile_quote = key
+      elsif key == :bio
+        @bio = key
+      end
     end
+
   end
 
   def self.all
-
+    @@all
   end
 end
