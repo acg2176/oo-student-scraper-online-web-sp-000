@@ -23,13 +23,13 @@ class Student
         @twitter = key_value[1]
       elsif key_value.include?(:linkedin)
         @linkedin = key_value[1]
-      elsif key == :github
-        @github = key
-      elsif key == :blog
+      elsif key_value.include?(:github)
+        @github = key_va
+      elsif key_value.include?(:blog)
         @blog = key
-      elsif key == :profile_quote
+      elsif key_value.include?(:profile_quote)
         @profile_quote = key
-      elsif key == :bio
+      elsif key_value.include?(:bio)
         @bio = key
       end
     end
