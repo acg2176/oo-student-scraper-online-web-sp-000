@@ -16,7 +16,8 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    attributes_hash.keys.each do |key|
+    array = attributes_hash.to_a
+    array.each do |key|
       binding.pry
       if key == :twitter
         @twitter = key
