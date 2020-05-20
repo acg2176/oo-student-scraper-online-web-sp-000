@@ -15,11 +15,11 @@ class Student
     new_array = []
     student_hash = {}
     students_array.each do |student| #list of dictionaries
-      student_hash[:name] = student[:name]#hash
-      student_hash[:location] = student[:location]
-      new_array << student_hash
+      # student_hash[:name] = student[:name]#hash
+      # student_hash[:location] = student[:location]
+      # new_array << student_hash
+      self.new(student)
     end
-    new_array
 
   end
 
