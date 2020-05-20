@@ -32,7 +32,6 @@ class Student
         @bio = key_value[1]
       end
     end
-
   end
 
   def self.all
