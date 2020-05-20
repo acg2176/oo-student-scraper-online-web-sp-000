@@ -16,7 +16,10 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-
+    binding.pry
+    if attributes_hash.key?(twitter)
+      @twitter = attributes_hash.keys[0]
+    end
   end
 
   def self.all
