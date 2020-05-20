@@ -17,12 +17,12 @@ class Student
 
   def add_student_attributes(attributes_hash)
     array = attributes_hash.to_a
-    array.each do |key|
+    array.each do |key_value|
       binding.pry
-      if key == :twitter
-        @twitter = key
-      elsif key == :linkedin
-        @linkedin = key
+      if key_value.include?(:twitter)
+        @twitter = key_value[1]
+      elsif key_value.include?(:linkedin)
+        @linkedin = key_value[1]
       elsif key == :github
         @github = key
       elsif key == :blog
