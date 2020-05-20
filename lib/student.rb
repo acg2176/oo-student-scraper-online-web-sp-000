@@ -24,13 +24,13 @@ class Student
       elsif key_value.include?(:linkedin)
         @linkedin = key_value[1]
       elsif key_value.include?(:github)
-        @github = key_va
+        @github = key_value[1]
       elsif key_value.include?(:blog)
-        @blog = key
+        @blog = key_value[1]
       elsif key_value.include?(:profile_quote)
-        @profile_quote = key
+        @profile_quote = key_value[1]
       elsif key_value.include?(:bio)
-        @bio = key
+        @bio = key_value[1]
       end
     end
 
