@@ -12,15 +12,7 @@ class Student
   end
 
   def self.create_from_collection(students_array) #output of scraper.scrape_index_page, {name => "a", location => "b", profile_url => "c"}
-    new_array = []
-    student_hash = {}
-    students_array.each do |student| #list of dictionaries
-      # student_hash[:name] = student[:name]#hash
-      # student_hash[:location] = student[:location]
-      # new_array << student_hash
-      self.new(student)
-    end
-
+    students_array.each {|student| self.new(student)}#list of dictionaries
   end
 
   def add_student_attributes(attributes_hash)
