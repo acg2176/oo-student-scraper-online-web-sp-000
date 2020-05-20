@@ -22,7 +22,7 @@ class Student
       elsif key == :linkedin
         @linkedin = key
       elsif key == :github
-        @github - key
+        @github = key
       elsif key == :blog
         @blog = key
       elsif key == :profile_quote
