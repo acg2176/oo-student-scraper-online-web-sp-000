@@ -17,6 +17,7 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.keys.each do |key|
+      binding.pry
       if key == :twitter
         @twitter = key
       elsif key == :linkedin
